@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corefix — anything anywhere Service</title>
+  <meta name="description" content="ServicePro: Find trusted home service professionals — mechanics, AC technicians, washing machine repair and more." />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hero-bg { background-size: cover; background-position: center; }
+    .hero-overlay { background: rgba(0,0,0,0.45); }
+  </style>
+</head>
+
+<body class="antialiased text-gray-800 bg-gray-50">
+
+  <!-- NAV -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center py-4">
+        
+        <!-- LOGO FIXED -->
+        <a href="#" class="text-2xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+          Corefix
+        </a>
+
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="#services" class="hover:text-indigo-600">Services</a>
+          <a href="#howitworks" class="hover:text-indigo-600">How it works</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+
+        <button id="mobileBtn" class="md:hidden p-2 rounded-md">
+          <svg id="menuOpen" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menuClose" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden px-4 pb-4">
+      <a href="#services" class="block py-2">Services</a>
+      <a href="#howitworks" class="block py-2">How it works</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="relative hero-bg" style="background-image: url('back.jpg');">
+      <div class="hero-overlay absolute inset-0"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 py-24 sm:py-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-white">
+
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Corefix Delivers Fast and Reliable Home & Industrial Repair Services</h1>
+          <p class="mt-4 text-lg">Expert technicians for electrical, plumbing, appliances, construction support, and more—anytime, anywhere.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#services" class="px-6 py-3 bg-indigo-500 text-white rounded-lg shadow hover:bg-indigo-600">Browse services</a>
+            <a href="#howitworks" class="px-6 py-3 border border-white/30 rounded-lg">How it works</a>
+          </div>
+        </div>
+
+        <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+          <div class="h-56 rounded-md overflow-hidden">
+            <img src="front.jpg" class="w-full h-full object-cover rounded-md" />
+          </div>
+
+          <ul class="mt-6 text-sm text-white/90">
+            <li>Mechanics, AC technicians, washing machine repair and more</li>
+            <li>Click a card to view full contact details & image</li>
+            <li>Call or navigate to the provider</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold">Services</h2>
+      <p class="text-sm text-gray-600 mt-2">Tap any service to see nearby professionals with contact details and a photo.</p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- CARD 1 -->
+        <div class="service-card bg-white p-6 rounded-lg shadow-sm cursor-pointer"
+          data-name="Selvakumar"
+          data-phone="+91 9786727226"
+          data-address="12, MG Road, Coimbatore"
+          data-service="Mechanic"
+          data-img="bike.jpg">
+          <h3 class="font-semibold text-lg">Mechanic (2 & 4 Wheeler)</h3>
+          <p class="text-sm text-gray-600 mt-2">Engine, brake, electrical, servicing and full vehicle diagnostics</p>
+          <div class="mt-4 text-sm text-indigo-600">Click to view contact & photo</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="service-card bg-white p-6 rounded-lg shadow-sm cursor-pointer"
+          data-name="Sahaya Mano"
+          data-phone="+91 80152 78466"
+          data-address="45, Industrial Estate, Coimbatore"
+          data-service="AC Technician"
+          data-img="ac.jpg">
+          <h3 class="font-semibold text-lg">AC Technician</h3>
+          <p class="text-sm text-gray-600 mt-2">Installation, gas filling, repairs, and servicing</p>
+          <div class="mt-4 text-sm text-indigo-600">Click to view contact & photo</div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="service-card bg-white p-6 rounded-lg shadow-sm cursor-pointer"
+          data-name="Tharun"
+          data-phone="+91 93614 99093"
+          data-address="45, Industrial Estate, Coimbatore"
+          data-service="Electrician"
+          data-img="home.jpg">
+          <h3 class="font-semibold text-lg">Electrician</h3>
+          <p class="text-sm text-gray-600 mt-2">Wiring, switchboard repair, power failure fixing</p>
+          <div class="mt-4 text-sm text-indigo-600">Click to view contact & photo</div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="service-card bg-white p-6 rounded-lg shadow-sm cursor-pointer"
+          data-name="Sasidhar"
+          data-phone="+91 73581 13926"
+          data-address="7, Gandhi Colony, Coimbatore"
+          data-service="Refrigerator Technician"
+          data-img="ref.jpg">
+          <h3 class="font-semibold text-lg">Refrigerator Technician</h3>
+          <p class="text-sm text-gray-600 mt-2">Gas filling, compressor issues, leaks</p>
+          <div class="mt-4 text-sm text-indigo-600">Click to view contact & photo</div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="service-card bg-white p-6 rounded-lg shadow-sm cursor-pointer"
+          data-name="Ram"
+          data-phone="+91 96325 86712"
+          data-address="101, Sivanandha Road, Coimbatore"
+          data-service="Washing Machine Technician"
+          data-img="wach.jpg">
+          <h3 class="font-semibold text-lg">Washing Machine Technician</h3>
+          <p class="text-sm text-gray-600 mt-2">Motor service, leak fixing, PCB repair</p>
+          <div class="mt-4 text-sm text-indigo-600">Click to view contact & photo</div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="service-card bg-white p-6 rounded-lg shadow-sm cursor-pointer"
+          data-name="Aakash"
+          data-phone="+91 98321 84569"
+          data-address="88, Anna Nagar, Coimbatore"
+          data-service="Plumber"
+          data-img="plu.jpeg">
+          <h3 class="font-semibold text-lg">Plumber</h3>
+          <p class="text-sm text-gray-600 mt-2">Leak repairs, blockage clearing, pipe installation</p>
+          <div class="mt-4 text-sm text-indigo-600">Click to view contact & photo</div>
+        </div>
+
+      </div>
+
+      <!-- MODAL -->
+      <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-40 hidden items-end sm:items-center justify-center z-50">
+        <div class="bg-white w-full sm:max-w-md rounded-t-xl sm:rounded-xl p-6">
+          <div class="flex justify-between">
+            <div>
+              <h3 id="modalService" class="text-lg font-semibold"></h3>
+              <p id="modalName" class="text-sm text-gray-700 mt-1"></p>
+            </div>
+            <button id="modalClose" class="text-gray-500">Close</button>
+          </div>
+
+          <img id="modalImg" class="w-full h-40 object-cover rounded-md mt-4 hidden">
+
+          <div class="mt-4 text-sm text-gray-700">
+            <p><strong>Phone:</strong> <a id="modalPhone" class="text-indigo-600"></a></p>
+            <p class="mt-2"><strong>Address:</strong> <span id="modalAddress"></span></p>
+          </div>
+
+          <div class="mt-6 flex gap-3">
+            <a id="callBtn" class="px-4 py-2 bg-green-600 text-white rounded-lg">Call</a>
+            <a id="mapBtn" class="px-4 py-2 border border-gray-200 rounded-lg" target="_blank">Open in maps</a>
+            <button id="closeBtn" class="ml-auto px-4 py-2 bg-gray-100 rounded-lg">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="howitworks" class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold">How it works</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">1. Browse services</h4>
+          <p class="text-sm text-gray-600 mt-2">Find the category you need.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">2. View details</h4>
+          <p class="text-sm text-gray-600 mt-2">Click a provider card to see contact details.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">3. Call or visit</h4>
+          <p class="text-sm text-gray-600 mt-2">Call directly or navigate using maps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-2 text-sm text-gray-600">
+        For partnerships or to add your service, email:
+        <a href="mailto:hello@corefix.com" class="text-indigo-600">hello@corefix.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600">
+      © <span id="year"></span> corefix.com.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const menuOpen = document.getElementById('menuOpen');
+    const menuClose = document.getElementById('menuClose');
+
+    mobileBtn.onclick = () => {
+      mobileNav.classList.toggle('hidden');
+      menuOpen.classList.toggle('hidden');
+      menuClose.classList.toggle('hidden');
+    };
+
+    // Modal
+    const cards = document.querySelectorAll('.service-card');
+    const modal = document.getElementById('contactModal');
+    const modalService = document.getElementById('modalService');
+    const modalName = document.getElementById('modalName');
+    const modalPhone = document.getElementById('modalPhone');
+    const modalAddress = document.getElementById('modalAddress');
+    const modalImg = document.getElementById('modalImg');
+    const callBtn = document.getElementById('callBtn');
+    const mapBtn = document.getElementById('mapBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const modalClose = document.getElementById('modalClose');
+
+    function openModal(card) {
+      modalService.textContent = card.dataset.service;
+      modalName.textContent = card.dataset.name;
+      modalPhone.textContent = card.dataset.phone;
+      modalPhone.href = "tel:" + card.dataset.phone;
+      modalAddress.textContent = card.dataset.address;
+
+      callBtn.href = modalPhone.href;
+      mapBtn.href = "https://maps.google.com/?q=" + encodeURIComponent(card.dataset.address);
+
+      modalImg.src = card.dataset.img;
+      modalImg.classList.remove('hidden');
+
+      modal.classList.remove('hidden');
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.style.display = "none";
+    }
+
+    cards.forEach(card => card.addEventListener('click', () => openModal(card)));
+    closeBtn.onclick = closeModal;
+    modalClose.onclick = closeModal;
+    modal.onclick = e => { if (e.target === modal) closeModal(); };
+
+    // Set Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
